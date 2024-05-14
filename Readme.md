@@ -70,7 +70,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```
-var queryOptions = new QueryOptions{
+var queryOptions = new textsummarizerQueryOptions{
   "text": "A news article can include accounts of eyewitnesses to the happening event. It can contain photographs, accounts, statistics, graphs, recollections, interviews, polls, debates on the topic, etc. Headlines can be used to focus the reader's attention on a particular (or main) part of the article. The writer can also give facts and detailed information following answers to general questions like who, what, when, where, why and how.",
   "sentences": 2
 };
@@ -79,11 +79,12 @@ var queryOptions = new QueryOptions{
 ###### Simple Request
 
 ```
-var response = apiClient.execute(queryOptions);
+var response = apiClient.Execute(queryOptions);
 if(response.error != null) {
 	Console.WriteLine(response.error);
 } else {
-    Console.WriteLine(response);
+    var jsonResponse = JsonConvert.SerializeObject(response.data, Newtonsoft.Json.Formatting.Indented);
+    Console.WriteLine(jsonResponse);
 }
 ```
 
