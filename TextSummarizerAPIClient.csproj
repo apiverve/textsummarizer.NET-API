@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>APIVerve.API.TextSummarizer</Title>
+    <Version>1.0.0</Version>
+    <Authors>APIVerve</Authors>
+    <Company>APIVerve</Company>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>Readme.md</PackageReadmeFile>
+    <PackageProjectUrl>https://apiverve.com/marketplace/api/textsummarizer</PackageProjectUrl>
+    <SignAssembly>False</SignAssembly>
+    <Description>Text Summarizer is a simple tool for summarizing text. It returns a summary of the text.</Description>
+    <RepositoryUrl>https://github.com/apiverve/textsummarizer-NET</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>text summarizer; text summarizer api; text summarizer tool; text summarizer software; text summarizer service; text summarizer library; text summarizer sdk; text summarizer code; text summarizer script; text summarizer program; text summarizer application; text summarizer app; text summarizer utility; text summarizer helper; text summarizer helper tool; text summarizer helper software; text summarizer helper service; text summarizer helper library; text summarizer helper sdk; text summarizer helper code; text summarizer helper script; text summarizer helper program; text summarizer helper application; text summarizer helper app; text summarizer helper tool; text summarizer helper utility; text summarizer helper</PackageTags>
+    <Copyright>©2024 APIVerve. All Rights Reserved</Copyright>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Update="Readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>
