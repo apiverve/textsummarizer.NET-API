@@ -71,8 +71,8 @@ Using the API client, you can perform requests to the API.
 
 ```
 var queryOptions = new textsummarizerQueryOptions{
-  "text": "A news article can include accounts of eyewitnesses to the happening event. It can contain photographs, accounts, statistics, graphs, recollections, interviews, polls, debates on the topic, etc. Headlines can be used to focus the reader's attention on a particular (or main) part of the article. The writer can also give facts and detailed information following answers to general questions like who, what, when, where, why and how.",
-  "sentences": 2
+  text: "A news article can include accounts of eyewitnesses to the happening event. It can contain photographs, accounts, statistics, graphs, recollections, interviews, polls, debates on the topic, etc. Headlines can be used to focus the reader's attention on a particular (or main) part of the article. The writer can also give facts and detailed information following answers to general questions like who, what, when, where, why and how.",
+  sentences: 2
 };
 ```
 
@@ -98,7 +98,7 @@ if(response.error != null) {
     "originalWords": 67,
     "summaryWords": 30,
     "percentDifference": 44.78,
-    "summary": "Headlines can be used to focus the reader's attention on a particular (or main) part of the article. A news article can include accounts of eyewitnesses to the happening event."
+    "summary": "A news article can include accounts of eyewitnesses to the happening event. Headlines can be used to focus the reader's attention on a particular (or main) part of the article."
   }
 }
 ```
