@@ -5,7 +5,7 @@ using System.Text;
 namespace APIVerve
 {
     public class TextSummarizerQueryOptions {
-public string text { get; set; }
-public integer sentences { get; set; }
+public string Text { get; set; }
+public int Sentences { get; set; }
 }
 }
